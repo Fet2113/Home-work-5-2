@@ -18,9 +18,9 @@ public class Main {
         int inBox = 15000;
         int total = 0;
         int i = 0;
-        for (; total <= 2_459_000; i++) {
+        while (total <= 2_459_000) {
             total = total + inBox;
-
+            i = i + 1;
             {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
             }
