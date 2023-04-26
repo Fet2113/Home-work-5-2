@@ -46,13 +46,14 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
     int y = 12_000_000;
-    int pBorn = 17;
-    int pDeath = 8;
+    int pBorn;
+    int pDeath;
+    for (int year = 0; year <= 10; year = year + 1)
+    { System.out.println("Год " + year+ ", численность населения составляет " + y);
+    pBorn = y/1000*17;
+    pDeath = y/1000*8;
+    y = y + (pBorn-pDeath);}}
 
-    for (int year = 0; year <= 10; year = year + 1) {
-        System.out.println("Год " + year+ ", численность населения составляет " + y);
-    y = y + (pBorn-pDeath);}
-}
     public static void task4() {
     System.out.println("Задача 4");
 
